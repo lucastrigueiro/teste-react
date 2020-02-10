@@ -20,7 +20,7 @@ const Routes = () => (
       <AuthRoute path="/example/:exParam" component={ExamplePage} />
       <Route exact path="/login" component={Login} />
       <Route path="/forgot-password" component={ForgotPassword} />
-      <Route component={NotFound} />
+      <Route component={Login} />
     </Switch>
   </Router>
 );
