@@ -6,7 +6,8 @@ export const AUTH_URL = '/authentications';
 export const ENCRYPTION_KEY = 'Mn4y9tcHQM'; // for browser storage encryption
 // export const SERVER_URL = process.env.API_URL;
 export const SERVER_URL = 'http://localhost';
-export const VERSION = `${process.env.CURRENT_VERSION}-${process.env.BUILD_NUMBER}`;
+// export const VERSION = `${process.env.CURRENT_VERSION}-${process.env.BUILD_NUMBER}`;
+export const VERSION = 'v0.0.1';
 
 export const STATES = [
   { initials: 'AC', state: 'Acre' },
