@@ -60,7 +60,6 @@ module.exports = (env) => merge(common, {
         }),
         new webpack.DefinePlugin({
             'process.env': {
-              'API_URL': JSON.stringify(env.API_URL),
               'BUILD_NUMBER': JSON.stringify(env.BUILD_NUMBER),
               'CURRENT_VERSION': JSON.stringify(env.CURRENT_VERSION),
             }
