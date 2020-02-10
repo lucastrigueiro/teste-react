@@ -1,0 +1,20 @@
+{
+    "presets": ["env","react","stage-0"],
+    "env": {
+        "development": {
+          "plugins": [
+            "transform-runtime",
+            ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "true" }]
+          ]
+        },
+        "production": {
+          "plugins": [
+            ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "true" }],
+            ["transform-runtime", { "polyfill": false, "regenerator": true }]
+          ]
+        },
+        "test": {
+          "plugins": ["transform-es2015-modules-commonjs"]
+        }
+      }
+}
